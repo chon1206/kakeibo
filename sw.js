@@ -1,4 +1,4 @@
-const V = "kakeibo-v1";
+const V = "kakeibo-v2";
 const FILES = ["./", "./index.html", "./icon.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(V).then((c) => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", (e) => {
